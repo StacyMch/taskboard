@@ -237,6 +237,7 @@ h3 {
     width: 150px;
     border-radius: 10px;
     background-size: cover;
+    margin: 5px;
 }
 
 .add-card-text {
