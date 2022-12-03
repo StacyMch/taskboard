@@ -1,0 +1,254 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #172b4d;
+}
+
+h3 {
+    text-align: center;
+}
+
+.board {
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+    background-color: brown;
+}
+
+.board-header {
+    padding: 10px;
+    position: relative;
+}
+
+.board-header input {
+    color: white;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+    border-radius: 5px;
+}
+
+.board-header input:focus {
+    color: black;
+    background-color: white;
+}
+
+.board-content {
+    display: flex;
+}
+
+#menu-backgrounds {
+
+}
+
+.backgrounds-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 250px;
+    background-color: gainsboro;
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.column-header {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.column-header input {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    max-width: 210px;
+    outline-color: gray;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.column-header input:focus {
+    background-color: white;
+}
+
+.column-content {
+    padding: 5px;
+}
+
+.column-delete {
+    color: #172b4d;
+    display: none;
+    cursor: pointer;
+}
+
+.column:hover .column-delete {
+    display: block;
+}
+
+.card {
+    color: #172b4d;
+    background-color: ghostwhite;
+    border-radius: 5px;
+    margin: 5px 0;
+    position: relative;
+    padding: 5px;
+}
+
+.card-header input {
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    width: 200px;
+}
+
+.card-content textarea {
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    width: 200px;
+}
+
+.card-delete {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.card:hover .card-delete {
+    display: block;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.to-right {
+    margin: 0 8px 0 auto;
+}
+
+.ghost {
+    opacity: 0.5;
+}
+
+.bg-fix {
+    background-size: cover;
+    background-position: center;
+}
+
+.btn {
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.318);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 auto 5px 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.499);
+}
+
+.menu-dots {
+    background-color: rgba(255, 255, 255, 0.318);
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.menu-dots:hover {
+    background-color: rgba(255, 255, 255, 0.499);
+}
+
+.dot {
+    background-color: white;
+    border-radius: 50%;
+    width: 3px;
+    height: 3px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: -500px;
+    background-color: gainsboro;
+    padding: 10px;
+    color: #172b4d;
+}
+
+.menu-header {
+    position: relative;
+}
+
+.menu-header > h3 {
+    margin: 10px auto;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.menu-close {
+    position: absolute;
+    top: -5px;
+    right: -4px;
+    font-size: 25px;
+    color: #172b4d;
+    cursor: pointer;
+}
+
+.menu-backgrounds-list {
+    position: relative;
+}
+
+.back-icon {
+    position: absolute;
+    top: -5px;
+    left: -4px;
+    font-size: 25px;
+    color: #172b4d;
+    cursor: pointer;
+}
+
+.backgrounds-thumbnails {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.add-card-text {
+    color: #172b4d;
+    background-color: transparent;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 auto 5px 5px;
+    cursor: pointer;
+}
+
+.add-card-text:hover {
+    background-color: rgba(128, 128, 128, 0.499);
+}
