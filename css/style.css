@@ -195,6 +195,7 @@ h3 {
     background-color: gainsboro;
     padding: 10px;
     color: #172b4d;
+    min-height: 50vh;
 }
 
 .menu-header {
