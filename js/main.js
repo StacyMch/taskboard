@@ -374,4 +374,22 @@ function renderBackgroundsList(board_number) {
 
     //сохраняем
     save();
+       
+}
+
+//функция смены фона по клику на иконку с фоном
+function changeBackground(board_number, background_number, image_number) {
+
+    //записываем фон в переменную
+    let background = backgrounds[background_number]['image'][image_number];
+
+    //переносим фон в JSON-модель
+    data['boards'][board_number]['backgrounds'] = background;
+
+    //сохраняем
+    save();
+
+    //перерисовываем
+    renderBoards();
+
 }
